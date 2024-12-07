@@ -9,7 +9,7 @@ public class Main {
 		JFrame window = new JFrame();
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //can close window
 		window.setResizable(false); // can't resize the window
-		window.setTitle("2D Adventure"); //title of the window
+		window.setTitle("Fortnite 2"); //title of the window
 		
 		GamePanel gamePanel = new GamePanel(); // making the game panel object
 		window.add(gamePanel);
@@ -19,6 +19,8 @@ public class Main {
 		window.setLocationRelativeTo(null); // window is open at center of screen
 		window.setVisible(true); // you can see the window
 		
+		
+		gamePanel.setupGame();
 		((GamePanel) gamePanel).startGameThread();
 
 	}
